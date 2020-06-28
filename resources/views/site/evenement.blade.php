@@ -38,15 +38,25 @@
     <!--==========================
       Services Section
     ============================-->
-    <section class="">
+    <section class="section">
       <div class="container" id="cible">
         <div class="row">
-          <div class="col-md-6 col-lg-4" data-wow-duration="1.4s">
+          <div class="col-md-6 col-lg-5" data-wow-duration="1.4s">
+            <div class="cible-unit">
+              <img src="{{asset('/site/img/pourquoi.png')}}"width="350">
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-7" data-wow-duration="1.4s">
             <div class="cible">
               <img src="{{asset('/site/img/01.png')}}">
               <div class="cible-unit">
-                <h1 class="title-eve cta-yellow"><span>Le passioné</span></h1>
+                <h1 class="title-eve cta-yellow"><span>Qui peut suivre nos formations</span></h1>
                 <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                  <br><br>
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
                   tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
                   quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
@@ -54,13 +64,19 @@
               </div>
             </div>
           </div>
+        </div>
 
-          <div class="col-md-6 col-lg-4" data-wow-duration="1.4s">
+        <div class="row">
+          <div class="col-md-6 col-lg-7" data-wow-duration="1.4s">
             <div class="cible">
               <img src="{{asset('/site/img/02.png')}}">
               <div class="cible-unit">
-                <h1 class="title-eve cta-yellow"><span>L'enpretrenneur</span></h1>
+                <h1 class="title-eve cta-yellow"><span>Pourquoi suivre nos formations</span></h1>
                 <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                  <br><br>
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
                   tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
                   quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
@@ -69,17 +85,9 @@
             </div>
           </div>
 
-          <div class="col-md-6 col-lg-4" data-wow-duration="1.4s">
-            <div class="cible">
-              <img src="{{asset('/site/img/03.png')}}">
-              <div class="cible-unit">
-                <h1 class="title-eve cta-yellow"><span>La lionne</span></h1>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                </p>
-              </div>
+           <div class="col-md-6 col-lg-5" data-wow-duration="1.4s">
+            <div class="cible-unit">
+              <img src="{{asset('/site/img/qui-somme-nous.png')}}"width="350">
             </div>
           </div>
         </div>
@@ -172,7 +180,7 @@
           </div>
         </div>-->
 
-        <div class="row">
+        <!--<<div class="row">
           <div class="col-lg-6">
             <div class="module">
               <h3>Développement web et mobile</h3>
@@ -213,7 +221,7 @@
               </ul>
             </div>
           </div>
-        </div>
+        </div>-->
 
       </div>
     </section><!-- #services -->

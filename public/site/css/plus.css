@@ -17,6 +17,11 @@
 
 #cible{
   background-color:  rgba(247, 300, 0, 0.1);
+  height: 800px;
+}
+.section{
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
 #services .boxer {
