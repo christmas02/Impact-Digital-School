@@ -21,9 +21,34 @@ Route::get('/nos_classes',[
 	'uses' => 'Site@nosClasses',
 ]);
 
+Route::get('/detail_cours',[
+	'as' => 'detailCours',
+	'uses' => 'Site@detailCours',
+]);
+
 Route::get('/l_ecole',[
 	'as' => 'page_ecole',
 	'uses' => 'Site@page_ecole',
+]);
+
+Route::get('/emplois',[
+	'as' => 'emplois',
+	'uses' => 'Site@emplois',
+]);
+
+Route::get('/evenement',[
+	'as' => 'evenement',
+	'uses' => 'Site@evenement',
+]);
+
+Route::get('/projets',[
+	'as' => 'projets',
+	'uses' => 'Site@projet',
+]);
+
+Route::get('/cours',[
+	'as' => 'cours',
+	'uses' => 'Site@cours',
 ]);
 
 

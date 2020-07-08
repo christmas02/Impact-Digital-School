@@ -12,7 +12,17 @@ class Site extends Controller
 {
     public function home_page()
     {
-        return view('site/evenement');
+        return view('site/index');
+    }
+
+     public function cours()
+    {
+        return view('site/cours');
+    }
+
+    public function detailCours()
+    {
+        return view('site/detailCours');
     }
 
     public function page_ecole()
@@ -23,5 +33,20 @@ class Site extends Controller
     public function nosClasses()
     {
         return view('site/nosClasse');
+    }
+
+    public function evenement()
+    {
+        return view('site/projet');
+    }
+
+    public function projet()
+    {
+        return view('site/projet');
+    }
+
+    public function emplois()
+    {
+        return view('site/projet');
     }
 }

@@ -299,7 +299,7 @@ h6 {
   font-size: 16px;
   text-transform: ;
   font-family: "Helvetica";
-  font-weight: 00;
+  font-weight: 900;
   line-height: 50px;
 }
 .btn-0{
@@ -352,12 +352,12 @@ h6 {
   visibility: visible;
 }
 
-.main-nav .drop-down li {
+.main-nav .drop-down li{
   min-width: 180px;
   position: relative;
 }
 
-.main-nav .drop-down ul a {
+.main-nav .drop-down ul a{
   padding: 10px 10px;
   font-size: 12px;
   font-weight: 500;

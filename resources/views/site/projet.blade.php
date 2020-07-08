@@ -17,25 +17,16 @@
       .titre h1{
         font-weight:bolder!important;
       }
+      
   </style>
 
 
-   <section class="seconde" style=" background-image: linear-gradient(to top, #4c0000 , #740000);">
+   <!-- <section class="seconde" style="background-image: url({{asset('/site/img/suivie.jpg')}}); background-size:cover">
     <div class="container">
       <div class="row">
-        <div class="col-md-8 text">
-            <h1>Apprenez à votre rythme<br>un codeur</h1>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-            </p>
-            <ul class="btn-nav lg-mt">
-              <li><a href="" class="btn-lg-3">S'inscrire</a></li>
-            </ul>
-        </div>
-        <div class="col-md-4">
-              <img class="img-responsive img-cours" src="{{asset('/site/img/dev.png')}}" width="100">
-        </div>
+          <div class="col-md-12 text intro-info titre">
+             <h1>Apprenez à votre rythme<br>un codeur</h1>
+          <div>
       </div>
     </div>
   </section><!-- #intro -->
@@ -46,37 +37,15 @@
       <div class="container">
         <br>
         <div class="row">
-          <div class="col-md-6 col-lg-4 data-wow-duration="1.4s">
-            <div class="boxer-cours" href="">
-              <img class="img-responsive img-cours" src="{{asset('/site/img/tesmonial.jpg')}}">
-              <div class="cours">
-                 <h5 class="title-boxer">Apprendre developpement web</h5>
-                 <p class="description">40 heures de formation.</>
-                 <br>
-                 <!--<a href="" class="btn-1">Participer</a>-->
-              </div>
+          <div class="col-md-2 col-lg-2"></div>
+          <div class="col-md-8 col-lg-8 data-wow-duration="1.4s">
+            <div class="error-404" href="">
+              <img class="img-responsive img-class" src="{{asset('/site/img/attente.png')}}">
+              <h4>Page en construction</h4>
             </div>
           </div>
-          <div class="col-md-6 col-lg-4 data-wow-duration="1.4s" disable>
-            <div class="boxer-cours" href="">
-              <img class="img-responsive img-cours" src="{{asset('/site/img/tesmonial.jpg')}}">
-              <div class="cours">
-                 <h5 class="title-boxer">Le frontend avec VUE JS</h5>
-                 <p class="description">40 heures de formation.</p>
-                 <br>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-4 data-wow-duration="1.4s">
-            <div class="boxer-cours" href="">
-              <img class="img-responsive img-cours" src="{{asset('/site/img/tesmonial.jpg')}}">
-              <div class="cours">
-                 <h5 class="title-boxer">Laravel dans toute sa plamdeur</h5>
-                 <p class="description">40 heures de formation.</p>
-                 <br>
-              </div>
-            </div>
-          </div>
+          
+
         </div>
         <!--<div class="row">
           <div class="col-md-6 col-lg-4 data-wow-duration="1.4s">

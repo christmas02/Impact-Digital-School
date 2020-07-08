@@ -101,22 +101,46 @@
     <section id="services" class="section-bg">
       <div class="container">
         <div class="row">
-          <div class="col-lg-12 text-center">
-            <h1 class="title-eve cta-red">Démarons cette <span>aventure</span> ensemble</h1>
-            <p class="cta-text"> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <div class="col-lg-7">
+            <h1 class="title-eve cta-red lg-title">Démarons cette <span>aventure</span> ensemble</h1>
+            <p class="cta-text"> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore 
+              eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+            <ul class="btn-nav lg-mt">
+              <li><a href="" class="btn-lg-1">Participez</a></li>
+              <li><a href="" class="btn-lg-2">En savoir + </a></li>
+            </ul>
+            
+          </div>
+          <div class="col-lg-5 lg-pt">
+              <img class="img-responsive" src="{{asset('/site/img/web.jpg')}}">
           </div>
         </div>
         <br>
         <div class="row">
           <div class="col-md-6 col-lg-4 data-wow-duration="1.4s">
+            <a href="{{ route('detailCours') }}">
+            <div class="boxer-cours">
+            
+              <img class="img-responsive img-cours" src="{{asset('/site/img/tesmonial.jpg')}}">
+              <div class="cours">
+                 <h5 class="title-boxer">Apprendre developpement web</h5>
+                 <p class="description">40 heures de formation.</>
+                 <br>
+                 <!--<a href="" class="btn-1">Participer</a>-->
+              </div>
+            
+            </div>
+            </a>
+          </div>
+
+          <div class="col-md-6 col-lg-4 data-wow-duration="1.4s" disable>
             <div class="boxer-cours" href="">
               <img class="img-responsive img-cours" src="{{asset('/site/img/tesmonial.jpg')}}">
               <div class="cours">
-                 <h5 class="title-boxer">Developpement web</h5>
-                 <p class="description">Alexis Djidonou.</p>
+                 <h5 class="title-boxer">Le frontend avec VUE JS</h5>
                  <p class="description">40 heures de formation.</p>
                  <br>
-                 <a href="" class="btn-1">Participer</a>
               </div>
             </div>
           </div>
@@ -124,32 +148,17 @@
             <div class="boxer-cours" href="">
               <img class="img-responsive img-cours" src="{{asset('/site/img/tesmonial.jpg')}}">
               <div class="cours">
-                 <h5 class="title-boxer">Developpement web</h5>
-                 <p class="description">Alexis Djidonou.</p>
+                 <h5 class="title-boxer">Laravel dans toute sa plamdeur</h5>
                  <p class="description">40 heures de formation.</p>
                  <br>
-                 <a href="" class="btn-1">Participer</a>
               </div>
             </div>
           </div>
-          <div class="col-md-6 col-lg-4 data-wow-duration="1.4s">
-            <div class="boxer-cours" href="">
-              <img class="img-responsive img-cours" src="{{asset('/site/img/tesmonial.jpg')}}">
-              <div class="cours">
-                 <h5 class="title-boxer">Developpement web</h5>
-                 <p class="description">Alexis Djidonou.</p>
-                 <p class="description">40 heures de formation.</p>
-                 <br>
-                 <a href="" class="btn-1">Participer</a>
-              </div>
-            </div>
-          </div>
-
-
         </div>
-        <!--<div class="row">
+
+        <div class="row">
           <div class="col-md-6 col-lg-4 data-wow-duration="1.4s">
-            <div class="boxer" href="#myModal" data-toggle="modal" >
+            <div class="boxer" href="#myModal" data-toggle="modal">
               <span>Workshop</span>
               <h5 class="title-boxer">Pouquoi appredre le php</h5>
               <p class="description"><img src="{{asset('/site/img/clock.png')}}"> août 26, 2019 - 07:00 PM</p>
@@ -178,7 +187,7 @@
               <div class="img-master"><img src="{{asset('/site/img/ekissi.png')}}"></div>
             </div>
           </div>
-        </div>-->
+        </div>
 
         <!--<<div class="row">
           <div class="col-lg-6">
