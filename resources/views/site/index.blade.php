@@ -117,15 +117,15 @@
           </div>
         </div>
         <br>
+
         <div class="row">
           <div class="col-md-6 col-lg-4 data-wow-duration="1.4s">
             <a href="{{ route('detailCours') }}">
             <div class="boxer-cours">
-            
               <img class="img-responsive img-cours" src="{{asset('/site/img/tesmonial.jpg')}}">
               <div class="cours">
                  <h5 class="title-boxer">Apprendre developpement web</h5>
-                 <p class="description">40 heures de formation.</>
+                 <p class="description">40 heures de formation.</p>
                  <br>
                  <!--<a href="" class="btn-1">Participer</a>-->
               </div>
@@ -134,29 +134,40 @@
             </a>
           </div>
 
-          <div class="col-md-6 col-lg-4 data-wow-duration="1.4s" disable>
-            <div class="boxer-cours" href="">
+          <div class="col-md-6 col-lg-4 data-wow-duration="1.4s">
+            <a href="">
+            <div class="boxer-cours">
               <img class="img-responsive img-cours" src="{{asset('/site/img/tesmonial.jpg')}}">
               <div class="cours">
-                 <h5 class="title-boxer">Le frontend avec VUE JS</h5>
+                 <h5 class="title-boxer">Demarer le frontent avec Vus.js</h5>
                  <p class="description">40 heures de formation.</p>
                  <br>
+                 <!--<a href="" class="btn-1">Participer</a>-->
               </div>
+            
             </div>
+            </a>
           </div>
+
           <div class="col-md-6 col-lg-4 data-wow-duration="1.4s">
-            <div class="boxer-cours" href="">
+            <a href="{{ route('detailCours') }}">
+            <div class="boxer-cours">
               <img class="img-responsive img-cours" src="{{asset('/site/img/tesmonial.jpg')}}">
               <div class="cours">
                  <h5 class="title-boxer">Laravel dans toute sa plamdeur</h5>
                  <p class="description">40 heures de formation.</p>
                  <br>
+                 <!--<a href="" class="btn-1">Participer</a>-->
               </div>
+            
             </div>
+            </a>
           </div>
+
+          
         </div>
 
-        <div class="row">
+        <!--<div class="row">
           <div class="col-md-6 col-lg-4 data-wow-duration="1.4s">
             <div class="boxer" href="#myModal" data-toggle="modal">
               <span>Workshop</span>
@@ -189,7 +200,7 @@
           </div>
         </div>
 
-        <!--<<div class="row">
+        <div class="row">
           <div class="col-lg-6">
             <div class="module">
               <h3>Développement web et mobile</h3>

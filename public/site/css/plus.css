@@ -38,6 +38,7 @@
 
 a .boxer-cours {
   color: #434e65 !important;
+  border:1px solid rgba(0, 0, 0, 0.2);
 }
 
 .cours{
@@ -45,7 +46,7 @@ a .boxer-cours {
 }
 
 .img-cours{
-  width: 350px;
+  width: 20px;
 }
 
 #services .boxer:hover {
@@ -61,7 +62,7 @@ a .boxer-cours {
 #services .title-boxer {
   font-weight: 700;
   margin-bottom: 5px;
-  font-size: 25px;
+  font-size: 20px;
   text-align: left;
 }
 #services .participer {
@@ -456,6 +457,11 @@ modal-content {
     overflow: hidden;
     outline: 0;
 }
+.seconde{
+          padding:60px 0px 40px 0px;
+          margin:70px 50px 0px 50px;
+          border-radius: 20px;
+      }
 
 
 

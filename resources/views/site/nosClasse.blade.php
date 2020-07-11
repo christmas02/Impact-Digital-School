@@ -6,16 +6,19 @@
     Intro Section
   ============================-->
   <style>
-      .seconde{
-          padding:70px 0px;
-          margin-top:70px;
-      }
       .text{
           color:#fff;
           font-weight:bold;
       }
       .titre h1{
         font-weight:bolder!important;
+      }
+      p{
+        font-size:20px;   
+      }
+      h1{
+        font-weight: 900;
+        font-size:50px;
       }
   </style>
 
@@ -45,38 +48,53 @@
     <section id="services" class="section-bg">
       <div class="container">
         <br>
-        <div class="row">
+         <div class="row">
           <div class="col-md-6 col-lg-4 data-wow-duration="1.4s">
-            <div class="boxer-cours" href="">
+            <a href="{{ route('detailCours') }}">
+            <div class="boxer-cours">
               <img class="img-responsive img-cours" src="{{asset('/site/img/tesmonial.jpg')}}">
               <div class="cours">
                  <h5 class="title-boxer">Apprendre developpement web</h5>
-                 <p class="description">40 heures de formation.</>
+                 <p class="description">40 heures de formation.</p>
                  <br>
                  <!--<a href="" class="btn-1">Participer</a>-->
               </div>
+            
             </div>
+            </a>
           </div>
-          <div class="col-md-6 col-lg-4 data-wow-duration="1.4s" disable>
-            <div class="boxer-cours" href="">
+
+          <div class="col-md-6 col-lg-4 data-wow-duration="1.4s">
+            <a href="">
+            <div class="boxer-cours">
               <img class="img-responsive img-cours" src="{{asset('/site/img/tesmonial.jpg')}}">
               <div class="cours">
-                 <h5 class="title-boxer">Le frontend avec VUE JS</h5>
+                 <h5 class="title-boxer">Demarer le frontent avec Vus.js</h5>
                  <p class="description">40 heures de formation.</p>
                  <br>
+                 <!--<a href="" class="btn-1">Participer</a>-->
               </div>
+            
             </div>
+            </a>
           </div>
+
           <div class="col-md-6 col-lg-4 data-wow-duration="1.4s">
-            <div class="boxer-cours" href="">
+            <a href="{{ route('detailCours') }}">
+            <div class="boxer-cours">
               <img class="img-responsive img-cours" src="{{asset('/site/img/tesmonial.jpg')}}">
               <div class="cours">
                  <h5 class="title-boxer">Laravel dans toute sa plamdeur</h5>
                  <p class="description">40 heures de formation.</p>
                  <br>
+                 <!--<a href="" class="btn-1">Participer</a>-->
               </div>
+            
             </div>
+            </a>
           </div>
+
+          
         </div>
         <!--<div class="row">
           <div class="col-md-6 col-lg-4 data-wow-duration="1.4s">

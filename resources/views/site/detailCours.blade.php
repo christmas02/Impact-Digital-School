@@ -6,11 +6,6 @@
     Intro Section
   ============================-->
   <style>
-      .seconde{
-          padding:60px 0px 40px 0px;
-          margin:70px 50px 0px 50px;
-          border-radius: 20px;
-      }
       .text{
           color:#fff;
           font-weight:bold;
@@ -32,10 +27,10 @@
     <div class="container">
       <div class="row">
         <div class="col-md-8 text">
-            <h1>Apprendre developpement<br>web</h1>
+            <h1>Les journees du web</h1>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+              Pour cette editio "les journees du web " vous plonge dans l'univert de la programmation 
+              web venez decouvris le metier de developpeur web dans tous ces contout.
             </p>
             <ul class="btn-nav lg-mt">
               <li><a href="#myModal" class="btn-lg-3" data-toggle="modal">S'inscrire</a></li>
@@ -55,8 +50,15 @@
         <br>
         <div class="row">
            <div class="col-md-6 col-lg-8 data-wow-duration="1.4s">
-            <h1 class="title-eve cta-red lg-title">Description de <span>la journee</span> de formation</h1>
+            <h1 class="title-eve cta-red lg-title">Qu'est ce que <span>les journees</span> du web</h1>
             <p class="cta-text text-justify">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat, repudiandae itaque. Atque qui voluptatem
+                maiores enim culpa, quos veritatis eaque labore odit, amet commodi voluptas vero temporibus ea, modi sunt.Nulla
+                deleniti cumque at veritatis quam. Vel eum architecto quisquam, repudiandae animi aperiam dolore iusto possimus,
+                explicabo, ullam fugiat? Ullam quas perferendis excepturi modi obcaecati, nemo tempora reprehenderit asperiores
+                optio.
+             </p>
+             <h2>Cette editions</h2>
+             <p class="cta-text text-justify">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat, repudiandae itaque. Atque qui voluptatem
                 maiores enim culpa, quos veritatis eaque labore odit, amet commodi voluptas vero temporibus ea, modi sunt.Nulla
                 deleniti cumque at veritatis quam. Vel eum architecto quisquam, repudiandae animi aperiam dolore iusto possimus,
                 explicabo, ullam fugiat? Ullam quas perferendis excepturi modi obcaecati, nemo tempora reprehenderit asperiores

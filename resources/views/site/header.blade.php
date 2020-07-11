@@ -101,6 +101,10 @@
                        <small id="" class="form-text text-muted">Indiquez votre numero de telephone dans ce champs.</small>
                     </div>
                     <div class="form-group col-md-6">
+                       <input class="form-control form-control-lg" type="text" placeholder="Age">
+                       <small id="" class="form-text text-muted">Indiquez votre numero dans ce champs.</small>
+                    </div>
+                    <div class="form-group col-md-12">
                        <input class="form-control form-control-lg" type="text" placeholder="Adresse email">
                        <small id="" class="form-text text-muted">Indiquez votre adresse email dans ce champs.</small>
                     </div>
@@ -119,7 +123,8 @@
                     </div>
 
                     <div class="form-group col-md-12">
-                       <button type="submit" class="btn-lg-2">Enregistrer</button>
+                       <button href="" type="submit" class="btn-lg-2">Enregistrer</button>
+                       <a href="#confModal" class="btn-lg-3" data-toggle="modal">ok</a>
                     </div>      
                 </form>      
             </div>
@@ -128,24 +133,23 @@
 </div> 
 
 <!-- large modal -->
-<div class="modal fade" id="largeModal" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
-  <div class="modal-dialog modal-lg">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h4 class="modal-title" id="myModalLabel">Large Modal</h4>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
+<div class="modal fade" id="confModal" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-confirm">
+         <!--Content-->
+    <div class="modal-content text-center">
+      <!--Header-->
+      <div class="modal-header d-flex justify-content-center">
+        <h1 class="heading">Bienvenus dans la famille</h1>
       </div>
+      <!--Body-->
       <div class="modal-body">
-        <h3>Modal Body</h3>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
+        <i class="fas fa-bell fa-4x animated rotateIn mb-4"></i>
+        <h5>Toute l'equipe vous remercie pour votre inscription</h5>
       </div>
     </div>
-  </div>
+    <!--/.Content-->
+
+    </div>
 </div>
 
 
