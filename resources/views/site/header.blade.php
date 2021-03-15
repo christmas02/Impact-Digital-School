@@ -37,7 +37,7 @@
 <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
 <!------ Include the above in your HEAD tag ---------->
 
-  
+
 
   <!-- =======================================================
     Theme Name: Rapid
@@ -64,7 +64,7 @@
 
       <nav class="main-nav d-none d-lg-block">
         <ul id="navbar">
-          <li class="btn-0"><a href="">CONNEXION</a></li>
+          <li class="btn-0"><a href="{{ route('login') }}">CONNEXION</a></li>
           <li class=""><a href="{{ url('/emplois') }}">offres d'emplois</a></li>
           <li class=""><a href="{{ url('/l_ecole') }}">L'ecole</a></li>
           <li><a href="{{ url('/evenement') }}">Évènement</a></li>
@@ -72,11 +72,11 @@
           <li class=""><a href="{{ url('/nos_classes') }}">formations</a></li>
         </ul>
       </nav><!-- .main-nav -->
-      
+
     </div>
   </header><!-- #header -->
-      
-  @yield('content') 
+
+  @yield('content')
 
     <!-- Modal HTML -->
 <div id="myModal" class="modal fade">
@@ -87,7 +87,7 @@
             </div>
             <div class="modal-body">
                 <form class="row">
-                    
+
                     <div class="form-group col-md-6">
                        <input class="form-control form-control-lg" type="text" placeholder="Votre nom">
                        <small id="" class="form-text text-muted">Indiquez votre nom dans ce champs.</small>
@@ -125,12 +125,12 @@
                     <div class="form-group col-md-12">
                        <button href="" type="submit" class="btn-lg-2">Enregistrer</button>
                        <a href="#confModal" class="btn-lg-3" data-toggle="modal">ok</a>
-                    </div>      
-                </form>      
+                    </div>
+                </form>
             </div>
         </div>
     </div>
-</div> 
+</div>
 
 <!-- large modal -->
 <div class="modal fade" id="confModal" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
@@ -245,7 +245,7 @@
     </div>
   </footer><!-- #footer -->
 
-  
+
 
   <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
   <!-- Uncomment below i you want to use a preloader -->

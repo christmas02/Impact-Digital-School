@@ -59,14 +59,40 @@ Route::get('/administrateur', [
 
 Route::get('/formulaire-enseignant', [
 	'as' => 'add_master',
-	'uses' => 'Admin@add_master'
+	'uses' => 'AdminController@add_master'
 ]);
+
+Route::get('/edit_formulaire-enseignant', [
+	'as' => 'edit_master',
+	'uses' => 'AdminController@edit_master'
+]);
+
 Route::post('/nouvelle-enseignant', [
 	'as' => 'save_master',
-	'uses' => 'Admin@save_master'
+	'uses' => 'AdminController@save_master'
 ]);
 
 Route::get('/formulaire-workshop', [
 	'as' => 'add_workshop',
 	'uses' => 'Admin@add_workshop'
 ]);
+
+// Route::get('/admin', [
+// 	'as' => 'admin',
+// 	'uses' => 'AdminController@index'
+// ]);
+
+//route pour nettoyer le cache du navigateur
+Route::get('/clear-cache', function() {
+    $exitCode = Artisan::call('config:clear');
+    $exitCode = Artisan::call('cache:clear');
+    $exitCode = Artisan::call('config:cache');
+    return 'DONE'; //Return anything
+});
+
+Auth::routes();
+
+
+
+Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/admin', 'AdminController@index')->name('admin.index');
