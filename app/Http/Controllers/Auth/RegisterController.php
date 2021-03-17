@@ -4,9 +4,14 @@ namespace App\Http\Controllers\Auth;
 
 use App\User;
 use App\Http\Controllers\Controller;
+use App\Notifications\RegisteredUser;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Foundation\Auth\RegistersUsers;
+
+use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Auth\Events\Registered;
 
 class RegisterController extends Controller
 {
@@ -22,6 +27,43 @@ class RegisterController extends Controller
     */
 
     use RegistersUsers;
+
+    public function confirm($id, $token)
+    {
+        $user = User::where('id',$id)->where('confirmation_token', $token)->first();
+        if($user){
+            $user->update(['confirmation_token' => null]);
+            $this->guard()->login($user);
+            return redirect($this->redirectPath())->with('success','votre compte a bien été confirmé');
+
+        }else{
+            return redirect('/login')->with('error','Ce lien  ne semble plus valide');
+        }
+    }
+
+      /**
+     * Handle a registration request for the application.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @return \Illuminate\Http\Response
+     */
+    public function register(Request $request)
+    {
+        //dd($request['role']);
+        $this->validator($request->all())->validate();
+
+        event(new Registered($user = $this->create($request->all())));
+        $user->notify(new RegisteredUser());
+        //$this->guard()->login($user);
+        $role = $request->role;
+        if($role == 1){
+            return redirect('inscriptionFormateur')->with('success','Votre compte à bien été créer. un lien de confirmation vous a été envoyé à votre adresse email afin de finaliser votre inscription');
+        }else{
+            return $this->registered($request, $user)
+            ?: redirect($this->redirectPath());
+        }
+
+    }
 
     /**
      * Where to redirect users after registration.
@@ -68,7 +110,8 @@ class RegisterController extends Controller
             'name' => $data['name'],
             'email' => $data['email'],
             'password' => Hash::make($data['password']),
-            'role'=>$data['role']
+            'role'=>$data['role'],
+            'confirmation_token'=> str_replace('/','',bcrypt(str_random(16)))
         ]);
     }
 }

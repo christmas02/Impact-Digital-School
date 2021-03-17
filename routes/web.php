@@ -97,7 +97,7 @@ Route::get('/clear-cache', function() {
 
 Auth::routes();
 
-
+Route::get('/confirm/{id}/{token}','Auth\RegisterController@confirm')->name('confirm');
 
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/admin', 'AdminController@index')->name('admin.index');

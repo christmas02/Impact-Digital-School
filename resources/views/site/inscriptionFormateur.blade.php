@@ -42,6 +42,11 @@
             <div class="col-md-12 col-lg-12 col-xl-12">
                 <div class="card shadow-lg o-hidden border-0 my-5">
                     <div class="card-body p-0">
+                        @if(session('success'))
+                            <div class=" alert alert-success py-2 mb-2">
+                                {{ session('success') }}
+                            </div>
+                        @endif
                         <div class="row">
                             <div class="col-lg-6 d-none d-lg-flex">
                                 <div class="flex-grow-1 bg-login-image" style="background-image: url(&quot;assets-admin/img/dogs/formateur_ischool-7.png&quot;);"></div>
@@ -51,10 +56,11 @@
                                     <div class="text-center">
                                         <h4 class="text-dark mb-4">Inscription du Formateur</h4>
                                     </div>
-
-                                    <form action="">
+                                    {{ $errors }}<br><br>
+                                    <form  method="POST" action="{{ route('register') }}">
+                                        @csrf
                                         <div class="">
-
+                                            <input type="hidden" value="1" name="role">
                                                 <div class="form-group ">
 
                                                         <input class="form-control form-control-user" type="text" id="exampleInputName" aria-describedby="namelHelp" value="{{ old('name') }}" placeholder="Entrer  votre nom et prénoms" name="name" required autofocus>
@@ -90,7 +96,7 @@
 
                                                 <div class="form-group">
 
-                                                        <input class="form-control {{ $errors->has('password') ? ' is-invalid' : '' }} form-control-user" type="password" id="password-confirm" aria-describedby="password-confirm" value="{{ old('password-confirm') }}" placeholder="Confirmez le mot de passe" name="password-confirm" required>
+                                                        <input class="form-control {{ $errors->has('password') ? ' is-invalid' : '' }} form-control-user" type="password" id="password-confirm" aria-describedby="password-confirm" value="{{ old('password_confirmation') }}" placeholder="Confirmez le mot de passe" name="password_confirmation" required>
 
                                                 </div>
 

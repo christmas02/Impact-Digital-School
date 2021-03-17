@@ -414,16 +414,16 @@
   'mail' => 
   array (
     'driver' => 'smtp',
-    'host' => 'smtp.mailtrap.io',
-    'port' => '2525',
+    'host' => 'smtp.googlemail.com',
+    'port' => '465',
     'from' => 
     array (
       'address' => 'hello@example.com',
       'name' => 'Example',
     ),
-    'encryption' => NULL,
-    'username' => NULL,
-    'password' => NULL,
+    'encryption' => 'ssl',
+    'username' => 'santefondation@gmail.com',
+    'password' => 'fondation2017',
     'sendmail' => '/usr/sbin/sendmail -bs',
     'markdown' => 
     array (
