@@ -14,7 +14,7 @@
         font-weight:bolder!important;
       }
       p{
-        font-size:20px;   
+        font-size:20px;
       }
       h1{
         font-weight: 900;
@@ -33,7 +33,7 @@
 				      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
             </p>
             <ul class="btn-nav lg-mt">
-              <li><a href="" class="btn-lg-3">S'inscrire</a></li>
+              <li><button  class="btn-lg-3" data-toggle="modal" data-target="#inscriptionModal">S'inscrire</button></li>
             </ul>
         </div>
         <div class="col-md-4">
@@ -43,7 +43,9 @@
     </div>
   </section><!-- #intro -->
 
-  <main id="main">  
+
+
+  <main id="main">
 
     <section id="services" class="section-bg">
       <div class="container">
@@ -59,7 +61,7 @@
                  <br>
                  <!--<a href="" class="btn-1">Participer</a>-->
               </div>
-            
+
             </div>
             </a>
           </div>
@@ -74,7 +76,7 @@
                  <br>
                  <!--<a href="" class="btn-1">Participer</a>-->
               </div>
-            
+
             </div>
             </a>
           </div>
@@ -89,12 +91,12 @@
                  <br>
                  <!--<a href="" class="btn-1">Participer</a>-->
               </div>
-            
+
             </div>
             </a>
           </div>
 
-          
+
         </div>
         <!--<div class="row">
           <div class="col-md-6 col-lg-4 data-wow-duration="1.4s">
@@ -140,4 +142,37 @@
       Call To Action Section
     ============================-->
 
+
+
+
+    <div class="modal fade" id="inscriptionModal" tabindex="-1" aria-labelledby="inscriptionModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content px-0 py-0">
+
+
+                <div class="row" >
+                    <div class="col py-2 col-md-6 rounded-left text-white" style=" background-image: linear-gradient(to top, #d6b211 , #b59b27);">
+                        <p class="pb-4">
+                            Vous souhaiter apporter votre expertise en donnant  des formations de qualités inscrivez vous comme formateur <br>
+
+                        </p>
+                        <span>
+                            <a href="{{ route('inscriptionFormateur') }}" class="btn btn-lg btn-dark">s'inscrire</a>
+                        </span>
+                    </div>
+                    <div class="col py-2 col-md-6">
+                        <p>
+                            Vous souhaiter apprendre à coder en suivant des formations de qualités dispensées par nos experts inscrivez vous comme Etudiant <br>
+
+                        </p>
+                        <span>
+                            <a href="#" class="btn  btn-lg  btn-dark">s'inscrire</a>
+                        </span>
+                    </div>
+                </div>
+
+
+          </div>
+        </div>
+      </div>
 @endsection

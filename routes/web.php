@@ -41,6 +41,11 @@ Route::get('/evenement',[
 	'uses' => 'Site@evenement',
 ]);
 
+Route::get('/inscriptionFormateur',[
+	'as' => 'inscriptionFormateur',
+	'uses' => 'FormateurController@inscriptionFormateur',
+]);
+
 Route::get('/projets',[
 	'as' => 'projets',
 	'uses' => 'Site@projet',
