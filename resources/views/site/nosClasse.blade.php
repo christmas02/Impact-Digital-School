@@ -166,7 +166,7 @@
 
                         </p>
                         <span>
-                            <a href="#" class="btn  btn-lg  btn-dark">s'inscrire</a>
+                            <a href="{{ route('inscriptionEtudiant') }}" class="btn  btn-lg  btn-dark">s'inscrire</a>
                         </span>
                     </div>
                 </div>

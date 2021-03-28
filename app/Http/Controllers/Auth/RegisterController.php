@@ -58,6 +58,8 @@ class RegisterController extends Controller
         $role = $request->role;
         if($role == 1){
             return redirect('inscriptionFormateur')->with('success','Votre compte à bien été créer. un lien de confirmation vous a été envoyé à votre adresse email afin de finaliser votre inscription');
+        }elseif($role == 2){
+            return redirect('inscriptionEtudiant')->with('success','Votre compte à bien été créer. un lien de confirmation vous a été envoyé à votre adresse email afin de finaliser votre inscription');
         }else{
             return $this->registered($request, $user)
             ?: redirect($this->redirectPath());

@@ -33,12 +33,18 @@
                 <div class="sidebar-brand-text mx-3"><span><img src="{{ asset('assets-admin/img/dogs/logo.png') }}" width="130px" alt=""></span></div>
             </a>
             <hr class="sidebar-divider my-0">
+            <!--Menu -->
             <ul class="nav navbar-nav text-light" id="accordionSidebar">
                 <li class="nav-item" role="presentation"><a class="nav-link  {{  (url()->current() == route('admin.index') ) ? 'active' : '' }}" href="/"><i class="fas fa-tachometer-alt"></i><span>Dashboard</span></a></li>
                 <li class="nav-item" role="presentation"><a class="nav-link  {{  (url()->current() == route('admin.index') ) ? 'active' : '' }}" href=""><i class="fas fa-user"></i><span>Profile</span></a></li>
+               @if(Auth::user()->role == 0)
                 <li class="nav-item" role="presentation"><a class="nav-link  {{  (url()->current() == route('admin.index') ) ? 'active' : '' }}" href=""><i class="fas fa-users"></i><span>Formateurs</span></a></li>
-
-
+                <li class="nav-item" role="presentation"><a class="nav-link  {{  (url()->current() == route('admin.index') ) ? 'active' : '' }}" href=""><i class="fas fa-users"></i><span>Etudiant</span></a></li>
+                <li class="nav-item" role="presentation"><a class="nav-link  {{  (url()->current() == route('admin.index') ) ? 'active' : '' }}" href=""><i class="fas fa-book"></i><span>Cours</span></a></li>
+               @endif
+               @if(Auth::user()->role == 1)
+               <li class="nav-item" role="presentation"><a class="nav-link  {{  (url()->current() == route('admin.index') ) ? 'active' : '' }}" href=""><i class="fas fa-book"></i><span>Cours</span></a></li>
+               @endif
                 {{-- <li class="nav-item" role="presentation"><a class="nav-link  {{  (url()->current() == route('article.index') ) ? 'active' : '' }}" href="register.html"><i class="fas fa-user-circle"></i><span>Register</span></a></li> --}}
 
 

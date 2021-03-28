@@ -56,7 +56,7 @@
                                     <div class="text-center">
                                         <h4 class="text-dark mb-4">Inscription du Formateur</h4>
                                     </div>
-                                    {{ $errors }}<br><br>
+
                                     <form  method="POST" action="{{ route('register') }}">
                                         @csrf
                                         <div class="">
