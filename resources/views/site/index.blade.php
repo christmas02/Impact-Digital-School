@@ -41,25 +41,26 @@
     <section class="section">
       <div class="container" id="cible">
         <div class="row">
-          <div class="col-md-6 col-lg-5" data-wow-duration="1.4s">
+          <div class="col-md-6 col-lg-4" data-wow-duration="1.4s">
             <div class="cible-unit">
               <img src="{{asset('/site/img/pourquoi.png')}}"width="350">
             </div>
           </div>
 
-          <div class="col-md-6 col-lg-7" data-wow-duration="1.4s">
+          <div class="col-md-6 col-lg-8" data-wow-duration="1.4s">
             <div class="cible">
               <img src="{{asset('/site/img/01.png')}}">
               <div class="cible-unit">
-                <h1 class="title-eve cta-yellow"><span>Qui peut suivre nos formations</span></h1>
+                <h1 class="title-eve cta-yellow"><span>	Qui peut suivre nos formations</span></h1>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                  <br><br>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                  Étudiants, Ingénieurs, Professionnels, développeurs, intégrateurs, Webdesigners etc…, 
+                  nos formations sont ouvertes à toutes personnes désireuses de s’initier 
+                  aux métiers WEB à titre personnel où tout simplement faire émerger leur métier par le biais du Web. 
+                  <br>
+                  En Effet c’est un secteur en plein essor qui génère actuellement de par le monde une multitude 
+                  d’emploi dans tous les secteurs d’activités, ce qui en fait un domaine incontournable. 
+                  Ainsi donc toutes personnes soucieuse de s’insérer dans le milieu pour faire évoluer 
+                  son business ou tout simplement trouver un emploi est au bon endroit. 
                 </p>
               </div>
             </div>
@@ -73,13 +74,13 @@
               <div class="cible-unit">
                 <h1 class="title-eve cta-yellow"><span>Pourquoi suivre nos formations</span></h1>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                  Nos formations sont adaptées à tous niveaux de compétences quelques soit la compétence du requérant. 
+                  Elles sont tout a fait personnalisée, vu que le code requiert une grande dextérité et une adaptation personnel. 
+                  Nos formations se tournent aussi vers d’anciens développeurs voulant se remettre à niveau tout en respectant 
+                  une pratique rigoureuse de coding claire et collaborative afin d’être compétitif sur le marché de l’emploi ou mettre 
+                  des applications web à la pointe des technologies actuelles. Nos formations se distinguent des autres pour 
+                  leur adaptabilité à la réalisation de projets existant et prêt à être déployer . 
                   <br><br>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
                 </p>
               </div>
             </div>
@@ -102,9 +103,10 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-7">
-            <h1 class="title-eve cta-red lg-title">Démarons cette <span>aventure</span> ensemble</h1>
-            <p class="cta-text"> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore 
-              eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+              <h1 class="title-eve cta-red lg-title">Démarons cette <span>aventure</span> ensemble</h1>
+            <p class="cta-text">
+             La découverte du WEB vous effraie ? Vous avez déjà essayé une technologie qui vous a paru assez complexe ? 
+             Vous venez de la version une du WEB ? eh bien, démarrez l’aventure sans plus attendre avec nous.
             </p>
             <ul class="btn-nav lg-mt">
               <li><a href="" class="btn-lg-1">Participez</a></li>
@@ -117,8 +119,14 @@
           </div>
         </div>
         <br>
+        <div class="row">
+          <div class="col-12">
+              <h1 class="title-eve cta-red lg-title">Nos formations  <span>disponible</span></h1>
+          </div>
+        </div>
 
         <div class="row">
+          
           <div class="col-md-6 col-lg-4 data-wow-duration="1.4s">
             <a href="{{ route('detailCours') }}">
             <div class="boxer-cours">
@@ -133,7 +141,7 @@
             </div>
             </a>
           </div>
-
+ 
           <div class="col-md-6 col-lg-4 data-wow-duration="1.4s">
             <a href="">
             <div class="boxer-cours">
@@ -163,8 +171,6 @@
             </div>
             </a>
           </div>
-
-          
         </div>
 
         <!--<div class="row">
@@ -255,9 +261,16 @@
     <section id="call-to-action" class="wow fadeInUp">
       <div class="container">
         <div class="row">
-          <div class="offset-lg-2 col-lg-8 text-center">
+          <div class="col-lg-12 text-center">
             <h2 class="cta-title">Renconter <span>nos Masters</span></h3>
-            <p class="cta-text"> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <p class="cta-text">
+              L’expertise et la pédagogie de nos masters vous garantissent 
+              une formation de qualité. Nos masters sont tous, des développeurs 
+              experts avec une solide expérience dans le domaine du WEB, tous passionné, 
+              ils cumulent un nombre important d’applications à leur actif et sont tous 
+              en amoureux de leur métier. Leur expérience au fil des projets leur a permis d’acquérir 
+              une pédagogie totalement adaptée aux métiers du WEB et à la demande du marché. 
+            </p>
           </div>
         </div>
 

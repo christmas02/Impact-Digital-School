@@ -12,6 +12,11 @@
 */
 
 Route::get('/',[
+	'as' => 'detailCours',
+	'uses' => 'Site@detailCours',
+]);
+
+Route::get('/home',[
 	'as' => 'home_page',
 	'uses' => 'Site@home_page',
 ]);
@@ -21,10 +26,10 @@ Route::get('/nos_classes',[
 	'uses' => 'Site@nosClasses',
 ]);
 
-Route::get('/detail_cours',[
+/*Route::get('/detail_cours',[
 	'as' => 'detailCours',
 	'uses' => 'Site@detailCours',
-]);
+]);*/
 
 Route::get('/l_ecole',[
 	'as' => 'page_ecole',
@@ -50,6 +55,8 @@ Route::get('/cours',[
 	'as' => 'cours',
 	'uses' => 'Site@cours',
 ]);
+
+
 
 
 Route::get('/administrateur', [

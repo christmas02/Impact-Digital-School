@@ -5,32 +5,18 @@
   <!--==========================
     Intro Section
   ============================-->
-  <style>
-      .text{
-          color:#fff;
-          font-weight:bold;
-      }
-      .titre h1{
-        font-weight:bolder!important;
-      }
-      p{
-        font-size:20px;   
-      }
-      h1{
-        font-weight: 900;
-        font-size:50px;
-      }
-  </style>
+
 
 
    <section class="seconde" style=" background-image: linear-gradient(to top, #4c0000 , #740000);">
     <div class="container">
       <div class="row">
         <div class="col-md-8 text">
-            <h1>Apprenez à votre rythme<br>un codeur</h1>
+            <h1>Apprenez à votre rythme  <br>à coder</h1>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+              Le code est une question 
+              de logique et nous vous offrons la possibilité de l’assimiler 
+              comme vous le devez.
             </p>
             <ul class="btn-nav lg-mt">
               <li><a href="" class="btn-lg-3">S'inscrire</a></li>

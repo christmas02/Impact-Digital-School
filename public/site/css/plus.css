@@ -462,9 +462,32 @@ modal-content {
           margin:70px 50px 0px 50px;
           border-radius: 20px;
       }
+.seconde{
+          padding:70px 0px;
+          margin-top:70px;
+      }
+      .text{
+          color:#fff;
+          font-weight:bold;
+      }
+      .titre h1{
+        font-weight:bolder!important;
+      }
 
-
-
+.text{
+          color:#fff;
+          font-weight:bold;
+      }
+      .titre h1{
+        font-weight:bolder!important;
+      }
+      p{
+        font-size:20px;   
+      }
+      h1{
+        font-weight: 900;
+        font-size:50px;
+      }
 
 
 

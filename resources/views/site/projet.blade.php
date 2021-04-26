@@ -6,17 +6,7 @@
     Intro Section
   ============================-->
   <style>
-      .seconde{
-          padding:70px 0px;
-          margin-top:70px;
-      }
-      .text{
-          color:#fff;
-          font-weight:bold;
-      }
-      .titre h1{
-        font-weight:bolder!important;
-      }
+    
       
   </style>
 

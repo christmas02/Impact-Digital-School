@@ -58,7 +58,7 @@
 
       <div class="logo float-left">
         <!-- Uncomment below if you prefer to use an image logo -->
-        <a href="{{ url('/') }}" class="scrollto"><span><img class="" src="{{asset('/site/img/logo.png')}}"></span></a>
+        <a href="{{ url('/home') }}" class="scrollto"><span><img class="" src="{{asset('/site/img/logo.png')}}"></span></a>
         <!-- <a href="#header" class="scrollto"><img src="img/logo.png" alt="" class="img-fluid"></a> -->
       </div>
 
@@ -67,7 +67,7 @@
           <li class="btn-0"><a href="">CONNEXION</a></li>
           <li class=""><a href="{{ url('/emplois') }}">offres d'emplois</a></li>
           <li class=""><a href="{{ url('/l_ecole') }}">L'ecole</a></li>
-          <li><a href="{{ url('/evenement') }}">Évènement</a></li>
+          <li><a href="{{ url('/') }}">Évènement</a></li>
           <li class=""><a href="{{ url('/projets') }}">Projet</a></li>
           <li class=""><a href="{{ url('/nos_classes') }}">formations</a></li>
         </ul>
@@ -176,7 +176,7 @@
               <div class="col-sm-8 text-center">
                 <div class="footer-newsletter">
                     <h2>Notre newletter</h2>
-                    <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna veniam enim veniam illum dolore legam minim quorum culpa amet magna export quem.</p>
+                    <p>Vous voulez que nous vous envoyions occasionnellement des courriels avec les nouvelles d'impactdigitalschool ?</p>
                     <form action="" method="post">
                       <input type="email" name="email"><input type="submit"  value="Subscribe">
                     </form>
@@ -187,8 +187,8 @@
             <div class="row">
                 <div class="col-sm-6">
                   <div class="footer-info">
-                    <h3 class="logo"><img src="{{asset('/site/img/logo.png')}}" style="max-height: 70px;"></h3>
-                    <p>Cras fermentum odio eu feugiat lide par naso tierra. Justo eget nada terra videa magna derita valies darta donna mare fermentum iaculis eu non diam phasellus. Scelerisque felis imperdiet proin fermentum leo. Amet volutpat consequat mauris nunc congue.</p>
+                    <h3 class="logo"><img src="{{asset('/site/img/logo.png')}}" style="max-height: 100px;"></h3>
+                    <p>.</p>
                   </div>
                 </div>
 
